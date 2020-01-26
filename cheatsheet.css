@@ -1,19 +1,19 @@
+* {
+font-family: "New Century Schoolbook", Palatino, serif;
+}
+
 p { 
-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-font-size: 10
+font-size: 8
 }
 
 h3 {
-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-font-size: 15
+font-size: 18
 }
 
 h5 {
-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-font-size: 13
+font-size: 17
 }
 
 h6 {
-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-font-size: 12
+font-size: 15
 }
