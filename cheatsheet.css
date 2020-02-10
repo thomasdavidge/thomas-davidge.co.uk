@@ -9,6 +9,10 @@
 }
 
 nav {
+  list-style-type: none;
+}
+
+nav li {
   text-decoration: none;
   text-align: center;
   colour: black;
