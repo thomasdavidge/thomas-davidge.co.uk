@@ -1,19 +1,25 @@
 * {
-font-family: "New Century Schoolbook", Palatino, serif;
+  font-family: "New Century Schoolbook", Palatino, serif;
+  padding-left: 25px;
+}
+
+#banner {
+  text-align: center;
+  font-size: 180%;
 }
 
 p { 
-font-size: 100%;
+  font-size: 100%;
 }
 
 h3 {
-font-size: 160%;
+  font-size: 160%;
 }
 
 h5 {
-font-size: 140%;
+  font-size: 140%;
 }
 
 h6 {
-font-size: 130%;
+  font-size: 130%;
 }
