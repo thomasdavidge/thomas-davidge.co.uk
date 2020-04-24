@@ -6,8 +6,16 @@ header {
   text-align: center;
  }
  
- nav {
+nav {
   text-align: center;
-  color: black;
+ }
+ 
+nav a:link, nav a:visited {
+  colour: black;
+  text-decoration: none; 
+ }
+ 
+nav a:active, nac a:hover {
+  color: grey;
   text-decoration: none;
  }
