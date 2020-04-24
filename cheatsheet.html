@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang=en>
+ <head>
+  <title >HTML Cheatsheet</title>
+   <link href="cheatsheet.css" rel="stylesheet" type="text/css">
+ </head>
+<header id="banner">
+ <h2>HTML Cheatsheet</h2>
+</header>
+<nav id="bar">
+ <a href="index.html">Home Page</a>
+</nav>
+<main>
+ <section id="contents">
+  <ul>
+   <li><a href="#requirements">Requirements</a></li>
+   <li><a href="#semantic">Semantic HTML</a></li>
+   <li><a href="#media">Media</a></li>
+   <li><a href="#lists">Lists</a></li>
+   <li><a href="#tables">Tables</a></li>
+   <li><a href="#forms">Forms</a></li>
+   <li><a href="#characters">Characters</a></li>
+  </ul>
+ </section>
+ <section id="requirements">
+  <h3>Requirements</h3>
+   <h5>!doctype html</h5>
+    <p>Opens the page, makes the browser aware of the document it is dealing with.</p>
+   <h5>html</h5>
+    <p>Open and close the document with this tag.</p>
+   <h5>html lang=en</h5>
+    <p>Language declaration for search engines.</p>
+   <h5>div</h5>
+    <p>Section out your webpage, non semantic.</p>
+   <h5>head</h5>
+    <p>Where the tab information goes, like the title and metadata.</p>
+   <h5>title</h5>
+    <p>Goes within the head tag as the title for the tab.</p>
+   <h5>H1-H6</h5>
+    <p>Header tag, H1 being the largest and H6 being the smallest.</p>
+   <h5>p</h5>
+    <p>Just a paragraph tag, use for standard text.</p>
+   <h5>strong</h5>
+    <p>Makes a section of text look bold.</p>
+   <h5>em</h5>
+    <p>Makes a text look like italics.</p>
+   <h5>span style="text-decoration: underline;"</h5>
+    <p>Underline a section of text.</p>
+   <h5>!--- ---</h5>
+    <p>Comment, not visible on live page.</p>
+   <h5>hr /</h5>
+    <p>Horizontal line.</p>
+   <h5>br /</h5>
+    <p>Line break.</p>
+   <h5>q</h5>
+    <p>Quotation.</p>
+   <h5>blockquote cite=""</h5>
+    <p>Quotation with citation.</p>
+   <h5>abbr title=""</h5>
+    <p>Marking abbreviation for search engines.</p>
+   <h5>a href=""</h5>
+    <p>Anchor element, basic hyperlink.</p>
+   <h5>a href=mailto:""</h5>
+    <p>Anchor for sending emails.</p>
+   <h5>a target=""</h5>
+    <p>Specifies where to open the link (_blank, _self, _parent, _top, _framename).</p>
+   <h5>meta charset="" /</h5>
+    <p>Tells browset what character set to use.</p>
+  <h6><a href="#contents">Return to top of page.</a></h6>
+ </section>
+ <br />
+ <section id="semantic">
+  <h3>Semantic HTML</h3>
+   <h5>header</h5>
+    <p>Marks the heading of a web page.</p>
+   <h5>nav</h5>
+    <p>Marks page navigation.</p>
+   <h5>main</h5>
+    <p>Marks the main section of text on a web page.</p>
+   <h5>article</h5>
+    <p>Mark a section of text and media that can operate in isolation.</p>
+   <h5>section</h5>
+    <p>Mark headers of different sections of the web page.</p>
+   <h5>aside</h5>
+    <p>Mark a section of text that is not crucial to the main bulk of text.</p>
+   <h5>footer</h5>
+    <p>Mark the footer of a web page.</p>
+   <h5>address</h5>
+    <p>Contact information.</p>
+  <h6><a href="#contents">Return to top of page.</a></h6>
+ </section>
+ <br />
+ <section id="media">
+  <h3>Media</h3>
+   <h5>img src""</h5>
+    <p>An image.</p>
+     <h6>img alt=""</h6>
+      <p>Description of image if it doesn't load or for the visually impaired.</p>
+     <h6>img height="" width=""</h6>
+       <p>Alters image dimensions.</p>
+   <h5>video</h5>
+      <p>Header for video media.</p>
+     <h6>video controls</h6>
+      <p>Adds controls for videos.</p>
+     <h6>video width="" height=""</h6>
+      <p>Alters video dimensions.</p>
+     <h6>source src=""</h6>
+      <p>Picks image source.</p>
+     <h6>source type="video/"</h6>
+      <p>Decides video format.</p>
+     <h6>video""/video</h6>
+      <p>Text to show if video doesn't load.</p>
+   <h5>audio</h5>
+    <p>Audio file.</p>
+     <h6>source src=""</h6>
+      <p>Picks file source.</p>
+     <h6>source type="audio/"</h6>
+      <p>Picks audio file type.</p>
+     <h6>audio controls</h6>
+      <p>Generates controls for audio player.</p>
+     <h6>audio""audio</h6>
+      <p>Message for when audio isn't playable.</p>
+   <h5>iframe</h5>
+    <p>Inline frame. Used to link and display other webpage documents within the HTML.</p>
+	 <h6>iframe src=""</h6>
+	  <p>Defines the source of the inline frame.</p>
+	 <h6>iframe width="" height=""</h6>
+	  <p>Defines iframe size.</p>
+	 <h6>iframe name=""</h6>
+	  <p>Defines the name of the iframe.</p>
+	 <h6>iframe sandbox</h6>
+	  <p>Applies restrictions to the iframe.</p>
+  <h6><a href="#contents">Return to top of page.</a></h6>
+ </section>
+  <br />
+ <section id="lists">
+  <h3>Lists</h3>
+   <h5>ul</h5>
+    <p>Unordered list, bullet points.</p>
+   <h5>ol</h5>
+    <p>Ordered list, numbered.</p>
+   <h5>dl</h5>
+    <p>Definition list.</p>
+	 <h6>dt</h6>
+	  <p>Title of definition.</p>
+	 <h6>dd</h6>
+	  <p>Main text body for definition.</p>
+   <h5>li</h5>
+    <p>List item.</p>
+  <h6><a href="#contents">Return to top of page.</a></h6>
+ </section>
+  <br />
+ <section id="tables">
+  <h3>Tables</h3>
+   <h5>table</h5>
+    <p>Open and close a table.</p>
+   <h5>caption</h5>
+    <p>Used to caption the head of the table</p>
+   <h5>tr</h5>
+    <p>Used to create a table row.</p>
+   <h5>td</h5>
+    <p>Table data.</p>
+   <h5>thead</h5>
+    <p>Used to create table headers.</p>
+   <h5>th</h5>
+    <p>Used instead of td to mark table headers.</p>
+   <h5>tbody</h5>
+    <p>Used to create the table body.</p>
+   <h5>tfoot</h5>
+    <p>Used to create the table footer.</p>
+   <h5>th/td colspan=""</h5>
+    <p>Used to make heders and data span more than one column.</p>
+   <h5>col</h5>
+    <p>Used to mark out columns within a colgroup element for styling.</p>
+     <h6>col span=""</h6>
+	  <p>Mark out styling span.</p>
+	 <h6>col style=""</h6>
+	  <p>Decide column style.</p>
+   <h5>colgroup</h5>
+    <p>Mark out groupa of columns for styling.</p>
+  <h6><a href="#contents">Return to top of page.</a></h6>
+ </section>
+  <br />
+ <section id="forms">
+  <h3>Forms</h3>
+   <h5>form</h5>
+    <p>Mark out the start and end of a form.</p>
+     <h6>form action=""</h6>
+	  <p>Marks out where to send the form data once completed.</p>
+	 <h6>form method="get/post"</h6>
+	  <p>Specifies the HTTP method to use when sending form-data.</p>
+	 <h6>form name=""</h6>
+	  <p>Specifies the name of the form.</p>
+	 <h6>autocomplete="yes/no"</h6>
+	  <p>Specifies whether or not a form will autocomlete.</p>
+	 <h6>form min="" max=""</h6>
+	  <p>Sets limit for number based forms.</p>
+	 <h6>form step=""</h6>
+	  <p>Number step for number based forms.</p>
+	 <h6>form value=""</h6>
+	  <p>Name for a specific value.</p>
+	 <h6>form type=""</h6>
+	  <p>Specifies form type.</p>
+	 <h6>Form type options</h6>
+	   <ul>
+	    <li><strong>button</strong></li>
+		<li><strong>checkbox</strong></li>
+		<li>color</li>
+		<li>date</li>
+		<li>datetime-local</li>
+		<li>email</li>
+		<li>file</li>
+		<li>hidden</li>
+		<li>image</li>
+		<li>month</li>
+		<li><strong>number</strong></li>
+		<li><strong>password</strong></li>
+	    <li><strong>radio</strong></li>
+		<li>range</li>
+		<li>reset</li>
+		<li>search</li>
+		<li><strong>submit</strong></li>
+		<li>tel</li>
+		<li><strong>text</strong></li>
+		<li>time</li>
+		<li>url</li>
+		<li>week</li>
+	   </ul>
+   <h5>option</h5>
+    <p>Options for multiple choice forms.</p>
+   <h5>textarea</h5>
+    <p>Text area for additional input and prewritten text.</p>
+     <h6>textarea cols="" rows=""</h6>
+	  <p>defines amount of columns and rows for text area.</p>
+   <h5>select</h5>
+    <p>Created options for dropdown list in conjunction with 'option'.</p>
+   <h5>optgroup</h5>
+    <p>Specifies groups for options.</p>
+   <h5>fieldset</h5>
+    <p>Group related form elements under one parent.</p>
+   <h5>datalist</h5>
+    <p>List of pre-defined options for an 'input' element.</p>
+  <h6><a href="#contents">Return to top of page.</a></h6>
+ </section>
+  <br />
+ <section id="characters">
+  <h3>Characters</h3>
+   <ul>
+    <li>&amp; : &amp; amp; </li>
+	<li>&quot; : &amp; quot; </li>
+	<li>&pound; : &amp; pound; </li>
+	<li>&dollar; : &amp; dollar; </li>
+	<li>&lt; : &amp; lt; </li>
+	<li>&gt; : &amp; gt; </li>
+	<li>&apos; : &amp; apos; </li>
+	<li>&#10084; : &amp; #10084; </li>
+	<li>&excl; : &amp; excl; </li>
+	<li>&quest; : &amp; quest; </li>
+   </ul>
+  <h6><a href="#contents">Return to top of page.</a></h6>
+ </section>
+</main>
+</html>
