@@ -16,6 +16,6 @@ nav a:link, nav a:visited {
  }
  
 nav a:active, nac a:hover {
-  color: grey;
+  color: #878787;
   text-decoration: none;
  }
