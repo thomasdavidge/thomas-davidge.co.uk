@@ -1,14 +1,277 @@
-<!DOCTYPE html>
-<html>
+<!doctype HTML>
+<html lang=en>
 <head>
- <title>CSS Cheatsheet</title>
+<title>CSS Cheatsheet</title>
   <link href="csscheatsheet.css" rel="stylesheet" type="text/css">	
-  <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
 </head>
+<header id="banner">
+ <h2>CSS Cheatsheet</h2>
+</header>
 <nav id="bar">
  <a href="index.html">Home Page</a>
 </nav>
-<body>
- <h3>Page currently under construction.</h3>
-</body>
+<main>
+ <section id="contents">
+  <ul>
+   <li><a href="#format">Code Formatting</a></li>
+   <li><a href="#linking">Linking in HTML</a></li>
+   <li><a href="#selectors">Selectors</a></li>
+   <li><a href="#visual">Visual Rules</a></li>
+   <li><a href="#box">The Box Model</a></li>
+   <li><a href="#layout">Layout and Positioning</a></li>
+   <li><a href="#colours">Colours</a></li>
+   <li><a href="#grid">Grid</a></li>
+  </ul>
+ </section>
+ <section id="format">
+<h3>Code Formatiing</h3>
+<h4> x { </br>
+y:z; </br>
+} </br>
+</br>
+/* unseen notes */
+</h4>
+</section>
+<section id="linking">
+<h3>Linking in HTML</h3>
+<h5>x style="y"</h5>
+ <p>In element styling for HTML.</p>
+<h5>Style</h5>
+ <p>Inline styling for a HTML document. Goes in the head section of the HTML document. </p>
+<h5>link</h5>
+ <p>HTML element to link to a CSS stylesheet.</p>
+  <h6>href</h6> 
+   <p>Like the anchor element, the value of this attribute must be the address, or path, to the CSS file.</p>
+  <h6>type</h6>
+   <p>This attribute describes the type of document that you are linking to (in this case, a CSS file). The value of this attribute 
+   should be set to text/css. </p>
+  <h6>rel</h6> 
+   <p>This attribute describes the relationship between the HTML file and the CSS file. Because you are linking to a stylesheet, 
+   the value should be set to stylesheet.</p>
+</section>
+<section id="selectors">
+ <h3>Selectors (id > class > tags)</h3>
+ <h5>everything = *</h5>
+ <h5>class (re-usable) = .blank</h5>
+ <h5>id (single use) = #blank</h5>
+ <h5>element = blank</h5>
+ <h5>x, y: Seperate elements with a comma to apply elements to multiple elements in a single set of code.</h5>
+ <h5>x y: Seperating elements witha a space will apply an additional layer of specificity to the selector.</h5>
+ <h5>!important: Will override any other tags.</h5>
+</section>
+<section id="visual">
+ <h3>Visual Rules</h3>
+ <h5>color</h5>
+  <p>Colour of element, set with keywords, hexidecimal RGB or the HSL co-ordinate tools. </p>
+ <h5>background-color</h5>
+  <p>Colour of background of the element, set with keywords, hexidecimal RGB or the HSL co-ordinate tools.</p>
+ <h5>font-family</h5>
+  <p>Selects the font for an element. Add continously less specific fallback fonts.
+  (add fonts to a page not on a computer via a link in the HTML page)</p>
+ <h5>font-size</h5>
+  <p>Selects the size of the text in px.</p>
+ <h5>@font-face</h5>
+  <p>Copy external font link into broswer url and select code from there to ember fonts straight into CSS. </p>
+ <h5>font-weight</h5> 
+  <p>Selects weight of element (bold, bolder, lighter, normal, 'number between 1, light, and 1000, bold in steps of 100')</p>
+ <h5>font-style</h5>
+  <p>( normal / italic / oblique ) Selects the style of text in an element. </p>
+ <h5>word-spacing</h5>
+  <p>Sets the spacing between words in x.xx em (0.25em is standard)</p>
+ <h5>letter-spacing</h5>
+  <p>Sets the spacing between words in x.xx em (0.02em is standard</p>
+ <h5>text-decoration</h5>
+  <p>Decorates text (overline, line-through, underline, none).</p>
+ <h5>text-transform</h5> 
+  <p>( uppercase / lowercase ) Can modify text to be all upper or lower case</p>
+ <h5>text-align</h5>
+  <p>Aligns text on page (left, right or center).</p>
+ <h5>line-height</h5> 
+  <p>Adjust the height of a line including font size and spacing. Any CSS valid unit or just a number with 1 as the standard 
+  can adjust this.</p>
+ <h5>opacity</h5> 
+  <p>Opacity of element (set with 0.x).</p>
+ <h5>background-image</h5>
+  <p>Set the background image of an element.</p>
+</section>
+<section id="box">
+ <h3>The Box Model</h3>
+ <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/diagram-boxmodel.svg" alt="Image showing the
+ components of the box model">
+ <h5>width</h5>
+  <p>Width of the content in px or percentages.</p>
+ <h5>height</h5>
+  <p>Height of the content in px or percentages.</p>
+ <h5>border (size,style,colour)</h5>
+  <p>The border of an element</p>
+   <h6>width</h6>
+    <p>Width of the border in px.</p>
+   <h6>style</h6>
+    <p>Style of border of which there are many like solid, dotted, dashed and double.</p>
+   <h6>color</h6>
+    <p>Colour of border, set with keywords, hexidecimal RGB or the HSL co-ordinate tools.</p>
+ <h5>border-radius</h5>
+  <p>Modify corners of the border in px or &'s.</p>
+ <h5>padding (trbl)</h5>
+  <p>Space between element and border in px.</p>
+   <h6>padding-top(right,left,bottom)</h6>
+    <p>Specific padding</p>
+ <h5>margin (trbl)</h5>
+  <p>Space between border and other elements.</p>
+   <h6>margin: 0 auto</h6>
+    <p>Centers the element horizontally, if it has width.</p>
+   <h6>margin-top(right,bottom,left)</h6> 
+    <p>Specified margins</p>
+ <h5>min/max-width</h5>
+  <p>Maximum or minimum width for an element.</p>
+ <h5>min/max-height</h5>
+  <p>Maximum or minimum height for an element.</p>
+ <h5>overflow (scroll / hidden / visible)</h5> 
+  <p>Sets what happens when content extends past the element size.</p>
+ <h5>visibility (hidden / visible)</h5>
+  <p>Changes visibility of an element.</p>
+ <h5>box-sizing: (content-box / border-box)</h5>
+  <p>Sets the type of box model the browser should use when interpreting a web page.</p>
+</section>
+<section id="layout">
+ <h3>Layout and Positioning</h3>
+  <h5>position</p>
+   <p>The default position of an element can be changed by setting its position property.</p>
+    <h6>static</h6>
+     <p>The default value.</p>
+    <h6>fixed<h6> 
+     <p>Fixes element to position on screen. Offset with tblr.</p>
+    <h6>absolute</h6>
+     <p>Value that makes an elements position immovable on a web page. Ignored by other content. Positioned relative to its closest 
+   	 positioned parent element. Offset with tblr.</p>
+    <h6>relative</h6> 
+     <p>This value allows you to position an element relative to its default static position on the web page. Offset with tblr.</p>
+  <h5>display</h5> 
+   <p>Dictates if an element can share horizontal space with other elements.</p>
+    <h6>inline</h6> 
+     <p>Takes up as much space as is necessary.</p>
+    <h6>block</h6> 
+     <p>Fill the entire width of the page by default, can be set with height and width.</p>
+    <h6>inline-block</h6>
+     <p>Inline-block elements can appear next to each other and we can specify their dimensions using the width and height properties.</p>
+  <h5>z-index</h5> 
+   <p>Adjusts visible 'depth' of element on a webpage. Alter by positive integer, 1 being furthest back.</p>
+  <h5>float</h5> 
+   <p>( left / right ) Move an element as far left or right as possible.</p>
+  <h5>clear</h5> 
+   <p>Sets behaviour of elements that collide horizontally.</p>
+    <h6>left</h6> 
+     <p>The left side of the element will not touch any other element within the same containing element.</p>
+    <h6>right</h6> 
+     <p>The right side of the element will not touch any other element within the same containing element.</p>
+    <h6>both</h6> 
+     <p>Neither side of the element will touch any other element within the same containing element.</p>
+    <h6>none</h6> 
+     <p>The element can touch either side.</p>
+</section>
+<section id="colours">
+ <h3>Colours</h3>
+  <h5>Named colours</h5>
+   <p>140 present named colours.</p>
+  <h5>Hexadecimal RGB</h5> 
+   <p>#rrggbb or #rgb. 16 digits (0-15: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F)</p>
+  <h5>RGB</h5>
+   <p>(rrr, ggg, bbb) 0-255. Same as hexadecimal but easier to comprehend.</p>
+  <h5>HSL:</h5>
+   <p>Hue, Saturation, Lightness: (hhh, sss%, lll%).  Red is 0 degrees, Green is 120 degrees, Blue is 240 degrees, and then 
+   back to Red at 360. Saturation and Lightness in percentages.</p>
+    <h6>a</h6>
+	 <p>(rgba / hsla) alpha. Adjusts for opacity (hhh, sss%, lll%, 0.a)</p>
+</section>
+<section id="grid">
+ <h3>Grid</h3>
+  <h5>display</h5>
+   <p>(grid, inline-grid, table, flex, block, +) The display property specifies the display behavior.</p>
+  <h5>grid-template-columns</h5>
+   <p>Set number of columns and width of each column. (XXXpx XXX% XXXfr...)</p>
+  <h5>grid-template-rows</h5> 
+   <p>Set number of columns and height of each row. (XXXpx XXX% XXXfr...) or repeat (3, XXXpx)</p>
+  <h5>grid-template</h5> 
+   <p>Easier way of setting above values (XXXpx XXX% / XXXpx XXXfr)</p>
+    <h3>minmax</h3>
+	 <p>Sets upper and lower limit for flexible sized grids ( minmax(200px 300px) )</p>
+  <h5>grid-row-gap</h5> 
+   <p>Adds gap between rows.</p>
+  <h5>grid-column-gap</h5>
+   <p>Adds gap between columns.</p> 
+  <h5>grid-gap</h5> 
+   <p>Easier way of setting above value (XXpx XXpx)</p>
+  <h5>grid-row-start</h5> 
+   <p>Make an element take up multiple grid rows. Start with this selector.</p>
+  <h5>grid-row-end</h5> 
+   <p>Make an element take up multiple grid rows. End with this selector. (1-6 will take up rows 1 through 5. Starts selection 
+   from the top of the element.) </p>
+  <h5>grid-row</h5>
+   <p>Easier way of setting above values (x / x)</p>
+  <h5>grid-column-start</h5>
+   <p>Make an element take up multiple grid columns. Start with this selector.</p>
+  <h5>grid-column-end</h5> 
+   <p>Make an element take up multiple grid columns. End with this selector. (1-6 will take up columns 1 through 5. Starts 
+   selection from the left of the element.) </p>
+  <h5>grid-column</h5> 
+   <p>Easier way of selecting above values ( x / x ) or ( x / span x ) </p>
+  <h5>grid-area</h5> 
+   <p>Shorthand for both grid-row and grid-column ( grs / gcs / gre / gce )</p>
+  <h5>grid-template-areas</h5> 
+   <p>Allows you to name sections of your web page to use as values as grid values.</p>
+  <h5>justify-items</h5> 
+   <p>A property that positions grid items along the inline, or row, axis. This means that it positions items from left to 
+   right across the web page.</p>
+    <h6>start</h6> 
+	 <p>Aligns grid items to the left side of the grid area.</p>
+    <h6>end</h6> 
+	 <p>Aligns grid items to the right side of the grid area.</p>
+    <h6>center</h6> 
+	 <p>Aligns grid items to the center of the grid area.</p>
+    <h6>stretch</h6> 
+	 <p>Stretches all items to fill the grid area.</p>
+  <h5>justify-content</h5> 
+   <p>Position the entire grid along the row axis.</p>
+    <h6>start</h6> 
+	 <p>Aligns the grid to the left side of the grid container.</p>
+    <h6>end</h6> 
+	 <p>Aligns the grid to the right side of the grid container.</p>
+    <h6>center</h6> 
+	 <p>Centers the grid horizontally in the grid container.</p>
+    <h6>stretch</h6> 
+	 <p>Stretches the grid items to increase the size of the grid to expand horizontally across the container.</p>
+    <h6>space-around</h6> 
+	 <p>Includes an equal amount of space on each side of a grid element, resulting in double the amount of space between elements
+	  as there is before the first and after the last element.</p>
+    <h6>space-between</h6> 
+	 <p>Includes an equal amount of space between grid items and no space at either end.</p>
+    <h6>space-evenly</h6>
+	 <p>Places an even amount of space between grid items and at either end.</p>
+  <h5>align-items</h5> 
+   <p>A property that positions grid items along the block, or column axis. This means that it positions items from top to bottom.</br>
+   (same as justify items)</p>
+  <h5>align-content</h5> 
+   <p>Positions the rows along the column axis, or from top to bottom.</br>
+   (same as justify content)</p>
+  <h5>justify-self</h5>
+   <p>Specifies how an individual element should position itself with respect to the row axis.</br>
+   (same as justify items)</p>
+  <h5>align-self</h5> 
+   <p>Specifies how an individual element should position itself with respect to the column axis.</br>
+   (same as justify items)</p>
+  <h5>grid-auto-rows</h5> 
+   <p>Specifies the height of implicitly added grid rows.</p>
+  <h5>grid-auto-columns</h5> 
+   <p>Specifies the width of implicitly added grid columns.</p>
+  <h5>grid-auto-flow</h5> 
+   <p>Specifies whether new elements should be added to rows or columns.</p>
+    <h6>row</h6> 
+	 <p>Specifies the new elements should fill rows from left to right and create new rows when there are too many elements (default).</p>
+    <h6>column</h6> 
+	 <p>Specifies the new elements should fill columns from top to bottom and create new columns when there are too many elements.</p>
+    <h6>dense</h6> 
+	 <p>This keyword invokes an algorithm that attempts to fill holes earlier in the grid layout if smaller elements are added.</p>
+</section>
+</main>
 </html>
