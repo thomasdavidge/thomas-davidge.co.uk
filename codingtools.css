@@ -1,15 +1,10 @@
 * {
  font-family: 'Bitter', serif;
 }
-
-header {
-  text-align: center;
-  font-size: 200%;
-  margin: 100px;
- }
  
 nav {
   text-align: center;
+  margin-top: 200px;
  }
  
  nav a:link, nav a:visited, nav a:focus {
